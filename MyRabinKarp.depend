@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1549103945 source:d:\programmingfiles\c++ files\myrabinkarp\main.cpp
+1549119054 source:d:\programmingfiles\c++ files\myrabinkarp\main.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
+	<cstring>
 
