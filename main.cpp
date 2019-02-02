@@ -7,10 +7,11 @@ using namespace std;
 #define numofchars 256
 
 void calculateResult(int numOfHits, int patternLen, int textLen){
-    long patshared = (numOfHits/patternLen)*100;
-    long txtshared = (numOfHits/textLen)*100;
-
-    long total = (patshared+txtshared)*2;
+    float patdiv = (float)numOfHits/(float)patternLen;
+    float txtdiv = (float)numOfHits/(float)textLen;
+    double patshared = patdiv*100;
+    double txtshared = txtdiv*100;
+    double total = (patshared+txtshared)/2;
     cout<<total;
 }
 
@@ -71,9 +72,6 @@ int search(char pat[], char txt[], int primeNumber){
     calculateResult(res,patternLen,textLen);
     return res;
 }
-
-
-
 
 int main(){
 
